@@ -1,0 +1,14 @@
+{% extends "::base.html.twig" %}
+{% block title %}Karta Medycznych Czynności Ratunkowych{% endblock %}
+{% block body %}
+    <h1>Wypełnij:</h1>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
+    <h1>Wybierz jedno z poniższych:</h1>
+    <p><a href="{{ path('history') }}">I WYWIAD</a></p>
+    <p><a href="{{ path('examination') }}">II BADANIE</a></p>
+    <p><a href="{{ path('diagnosis') }}">III ROZPOZNANIE</a></p>
+    <p><a href="{{ path('proceedings') }}">IV POSTĘPOWANIE Z PACJENTEM</a></p>
+    <p><a href="{{ path('data') }}">V DANE PACJENTA I PRZEKAZANIE PACJENTA</a></p>
+{% endblock %}

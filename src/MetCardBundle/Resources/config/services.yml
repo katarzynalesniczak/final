@@ -1,0 +1,4 @@
+services:
+#    met_card.example:
+#        class: MetCardBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

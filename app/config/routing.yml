@@ -1,0 +1,6 @@
+met_card:
+    resource: "@MetCardBundle/Controller/"
+    type:     annotation
+    prefix:   /
+logout:
+    path: /logout
